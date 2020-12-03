@@ -5,7 +5,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class GreetingService {
 
-    String sayHi() {
-        return "hello world";
-    }
+  public GreetingService() {
+    System.out.println("1");
+  }
+
+  String sayHi() {
+    return "hello world";
+  }
 }
